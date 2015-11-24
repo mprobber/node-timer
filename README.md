@@ -58,7 +58,7 @@ Be sure to make this call to server.use before your other middleware, otherwise 
 What's broken
 -------------
 
-Check the [GitHub issues](https://github.com/michaelp/node-timer/issues).
+Check the [GitHub issues](https://github.com/mprobber/node-timer/issues).
 
 LICENSE
 -------
