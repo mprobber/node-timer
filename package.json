@@ -1,0 +1,24 @@
+{
+  "name": "node-timer",
+  "version": "0.0.1",
+  "description": "A simple timer and median estimator written for node",
+  "main": "lib/TimerAggregator.js",
+  "scripts": {
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mprobber/node-timer.git"
+  },
+  "devDependencies": {
+    "babel": "^4.6.0"
+  },
+  "author": "Michael Probber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mprobber/node-timer/issues"
+  },
+  "homepage": "https://github.com/mprobber/node-timer#readme"
+}
