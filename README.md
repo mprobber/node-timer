@@ -8,8 +8,8 @@ Quick Usage Example
 
 ```javascript
 var nt = require('node-timer');
-var node-timer = new node-timer(),
-var t = node-timer.getTimer("important-things");
+var nodeTimer = new nt(),
+var t = nodeTimer.getTimer("important-things");
 
 // DO IMPORTANT THINGS HERE
 
@@ -21,7 +21,7 @@ API
 ---
 
 ```javascript
-var t = node-timer.getTimer(name)
+var t = nodeTimer.getTimer(name)
 // DO IMPORTANT THINGS HERE
 t.stop();
 ```
@@ -29,14 +29,14 @@ t.stop();
 Starts a timer, and returns the timer object.  Use t.stop() to stop the timer.
 
 ```javascript
-var r = node-timer.timeFunction("superSpecialFunction", function(callback){
+var r = nodeTimer.timeFunction("superSpecialFunction", function(callback){
     //DO STUFF
 });
 ```
 Time a function call.  Note that the function needs to call callback() when done, otherwise the timer will never stop.
 
 ```javascript
-var medianTime = node-timer.getMedianTime(name);
+var medianTime = nodeTimer.getMedianTime(name);
 ```
 Pretty self-explanatory.  Will return the median time given by a timer.
 
@@ -51,7 +51,7 @@ There's also a function to time the full path of arbitrary restify requests.  Ex
 
 ```javascript
 let server = restify.createServer();
-server.use(node-timer.restifyFullPathTimer());
+server.use(nodeTimer.restifyFullPathTimer());
 ```
 Be sure to make this call to server.use before your other middleware, otherwise it won't time it.
 
