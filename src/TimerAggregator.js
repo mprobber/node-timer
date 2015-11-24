@@ -19,8 +19,7 @@ export default class {
   }
   timeFunction(name, fn) {
     var t = this.getTimer();
-    var r = fn();
-    t.stop();
+    var r = fn(function(){t.stop();});
     return r;
   }
   getMedianTime(name){
