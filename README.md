@@ -8,7 +8,7 @@ Quick Usage Example
 
 ```javascript
 var nt = require('node-timer');
-var nodeTimer = new nt(),
+var nodeTimer = new nt();
 var t = nodeTimer.getTimer("important-things");
 
 // DO IMPORTANT THINGS HERE
